@@ -17,7 +17,7 @@ sudo apt install curl -y
 sudo apt install wget -y
 
 # Install lastest version of nvim
-curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage -y
+curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
 chmod u+x nvim.appimage
 sudo ./nvim.appimage --appimage-extract
 sudo ./squashfs-root/AppRun --version
@@ -33,6 +33,7 @@ sudo npm i --global yarn -y
 # Install zsh
 sudo apt install zsh -y
 zsh
+exit
 
 # Install OhMyZsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -y
