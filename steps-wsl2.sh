@@ -37,3 +37,6 @@ zsh
 # Install OhMyZsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -y
 
+# Setting zsh as default
+chsh -s $(which zsh)
+
