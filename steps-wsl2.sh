@@ -33,7 +33,6 @@ sudo npm i --global yarn -y
 # Install zsh
 sudo apt install zsh -y
 zsh
-exit
 
 # Install OhMyZsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -y
