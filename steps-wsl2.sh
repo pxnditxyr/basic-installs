@@ -30,6 +30,13 @@ sudo apt install nodejs -y
 sudo apt install npm -y
 sudo npm i --global yarn -y
 
+# Install python3 pip3
+sudo apt install python3-pip -y
+
+
+# Install provider python3
+python3 -m pip install --user --upgrade pynvim
+
 # Install zsh
 sudo apt install zsh -y
 zsh
