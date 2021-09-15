@@ -37,6 +37,9 @@ sudo apt install python3-pip -y
 # Install provider python3
 python3 -m pip install --user --upgrade pynvim
 
+# Install ripgrep
+sudo apt install ripgrep -y
+
 # Install zsh
 sudo apt install zsh -y
 zsh
