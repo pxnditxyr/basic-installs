@@ -28,7 +28,7 @@ rm -rf nvim.appimage
 # Install nodejs programing pack
 sudo apt install nodejs -y
 sudo apt install npm -y
-sudo npm i --global yarn -y
+# sudo npm i --global yarn -y
 
 # Install python3 pip3
 sudo apt install python3-pip -y
