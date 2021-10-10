@@ -40,6 +40,21 @@ python3 -m pip install --user --upgrade pynvim
 # Install ripgrep
 sudo apt install ripgrep -y
 
+# Update NodeJs and NPM
+sudo apt remove nodejs
+sudo apt-get purge --auto-remove nodejs
+
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -\n
+sudo apt install nodejs -y
+
+sudo npm install npm@latest -g
+
+# Install Java
+sudo apt update -y
+sudo apt upgrade -y
+sudo apt install openjdk-11-jre-headless -y
+sudo apt install default-jdk -y
+
 # Install zsh
 sudo apt install zsh -y
 zsh
