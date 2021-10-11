@@ -48,8 +48,8 @@ sudo apt install ripgrep -y
 sudo apt remove nodejs -y
 sudo apt-get purge --auto-remove nodejs -y
 
-curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -\n
-sudo apt install nodejs -y
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt-get install -y nodejs
 
 sudo npm install npm@latest -g
 
