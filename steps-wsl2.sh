@@ -17,13 +17,17 @@ sudo apt install curl -y
 sudo apt install wget -y
 
 # Install lastest version of nvim
-curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
+# curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage # Nightly Currently Not Found
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod u+x nvim.appimage
 sudo ./nvim.appimage --appimage-extract
 sudo ./squashfs-root/AppRun --version
 sudo mv squashfs-root /
 sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
 rm -rf nvim.appimage
+
+# Clone my configs
+git clone https://github.com/pxnditxyr/nvim.git ~/.config/nvim/
 
 # Install nodejs programing pack
 sudo apt install nodejs -y
@@ -41,8 +45,8 @@ python3 -m pip install --user --upgrade pynvim
 sudo apt install ripgrep -y
 
 # Update NodeJs and NPM
-sudo apt remove nodejs
-sudo apt-get purge --auto-remove nodejs
+sudo apt remove nodejs -y
+sudo apt-get purge --auto-remove nodejs -y
 
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -\n
 sudo apt install nodejs -y
